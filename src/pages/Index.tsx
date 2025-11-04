@@ -74,10 +74,11 @@ const Index = () => {
             </div>
 
             <div className="text-center animate-scale-up">
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                ЭНЕРГИЯ
-              </h1>
-              <p className="text-sm text-muted-foreground">Спортивно-оздоровительный клуб</p>
+              <img 
+                src="https://cdn.poehali.dev/files/cfbe6aa4-943c-46fa-bb88-a27ce310b180.png" 
+                alt="BEST FORM" 
+                className="h-16 mx-auto"
+              />
             </div>
 
             <div className="flex items-center gap-4 animate-slide-in-right">
