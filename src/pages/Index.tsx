@@ -96,7 +96,7 @@ const Index = () => {
             </div>
           </div>
 
-          <nav className="mt-4 flex justify-center gap-1">
+          <nav className="mt-2 flex justify-center gap-1">
             {[
               { id: 'home', label: 'Главная' },
               { id: 'services', label: 'Услуги' },
@@ -118,7 +118,7 @@ const Index = () => {
         </div>
       </header>
 
-      <section id="home" className="relative h-[600px] flex items-center justify-center overflow-hidden">
+      <section id="home" className="relative h-[500px] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
