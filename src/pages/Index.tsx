@@ -64,12 +64,36 @@ const Index = () => {
     <div className="min-h-screen">
       <header className="sticky top-0 z-50 bg-white shadow-md">
         <div className="container mx-auto px-4 py-6">
-          <div className="text-center">
-            <img 
-              src="https://cdn.poehali.dev/files/cfbe6aa4-943c-46fa-bb88-a27ce310b180.png" 
-              alt="BEST FORM" 
-              className="h-20 mx-auto animate-scale-up"
-            />
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-2 text-xs">
+              <Icon name="MapPin" size={16} className="text-primary" />
+              <div>
+                <p className="font-medium">г. Москва, ул. Спортивная, 15</p>
+                <p className="text-muted-foreground">Пн-Вс: 07:00 - 23:00</p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <img 
+                src="https://cdn.poehali.dev/files/cfbe6aa4-943c-46fa-bb88-a27ce310b180.png" 
+                alt="BEST FORM" 
+                className="h-20 mx-auto animate-scale-up"
+              />
+            </div>
+
+            <div className="flex items-center gap-2 text-xs">
+              <div className="text-right">
+                <p className="font-semibold">+7 (495) 123-45-67</p>
+                <div className="flex gap-1 mt-1 justify-end">
+                  <Button size="sm" variant="ghost" className="h-7 w-7 p-0 hover:bg-green-100">
+                    <Icon name="MessageCircle" size={16} className="text-green-600" />
+                  </Button>
+                  <Button size="sm" variant="ghost" className="h-7 w-7 p-0 hover:bg-blue-100">
+                    <Icon name="Send" size={16} className="text-blue-600" />
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
 
           <nav className="mt-4 flex justify-center gap-1">
