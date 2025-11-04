@@ -96,7 +96,7 @@ const Index = () => {
             </div>
           </div>
 
-          <nav className="mt-2 flex justify-center gap-1">
+          <nav className="mt-2 -mx-4 px-4 py-2 bg-gray-100 flex justify-center gap-1">
             {[
               { id: 'home', label: 'Главная' },
               { id: 'services', label: 'Услуги' },
