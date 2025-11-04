@@ -63,37 +63,13 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-50 bg-white shadow-md">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 text-sm animate-slide-in-left">
-              <Icon name="MapPin" size={18} className="text-primary" />
-              <div>
-                <p className="font-medium">г. Москва, ул. Спортивная, 15</p>
-                <p className="text-muted-foreground">Пн-Вс: 07:00 - 23:00</p>
-              </div>
-            </div>
-
-            <div className="text-center animate-scale-up">
-              <img 
-                src="https://cdn.poehali.dev/files/cfbe6aa4-943c-46fa-bb88-a27ce310b180.png" 
-                alt="BEST FORM" 
-                className="h-16 mx-auto"
-              />
-            </div>
-
-            <div className="flex items-center gap-4 animate-slide-in-right">
-              <div className="text-right">
-                <p className="font-semibold text-lg">+7 (495) 123-45-67</p>
-                <div className="flex gap-2 mt-1 justify-end">
-                  <Button size="sm" variant="ghost" className="h-8 w-8 p-0 hover:bg-green-100">
-                    <Icon name="MessageCircle" size={18} className="text-green-600" />
-                  </Button>
-                  <Button size="sm" variant="ghost" className="h-8 w-8 p-0 hover:bg-blue-100">
-                    <Icon name="Send" size={18} className="text-blue-600" />
-                  </Button>
-                </div>
-              </div>
-            </div>
+        <div className="container mx-auto px-4 py-6">
+          <div className="text-center">
+            <img 
+              src="https://cdn.poehali.dev/files/cfbe6aa4-943c-46fa-bb88-a27ce310b180.png" 
+              alt="BEST FORM" 
+              className="h-20 mx-auto animate-scale-up"
+            />
           </div>
 
           <nav className="mt-4 flex justify-center gap-1">
@@ -345,24 +321,46 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            ЭНЕРГИЯ
-          </h3>
-          <p className="text-gray-400 mb-4">Спортивно-оздоровительный клуб</p>
-          <div className="flex justify-center gap-4">
-            <Button variant="ghost" size="sm" className="text-white hover:text-primary">
-              <Icon name="MessageCircle" size={20} />
-            </Button>
-            <Button variant="ghost" size="sm" className="text-white hover:text-secondary">
-              <Icon name="Send" size={20} />
-            </Button>
-            <Button variant="ghost" size="sm" className="text-white hover:text-accent">
-              <Icon name="Instagram" size={20} />
-            </Button>
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="text-center md:text-left">
+              <div className="flex items-center gap-2 justify-center md:justify-start mb-2">
+                <Icon name="MapPin" size={20} className="text-primary" />
+                <div>
+                  <p className="font-medium">г. Москва, ул. Спортивная, 15</p>
+                  <p className="text-gray-400 text-sm">Пн-Вс: 07:00 - 23:00</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <img 
+                src="https://cdn.poehali.dev/files/cfbe6aa4-943c-46fa-bb88-a27ce310b180.png" 
+                alt="BEST FORM" 
+                className="h-12 mx-auto mb-3"
+              />
+              <p className="text-gray-400 text-sm">Спортивно-оздоровительный клуб</p>
+            </div>
+
+            <div className="text-center md:text-right">
+              <p className="font-semibold text-lg mb-2">+7 (495) 123-45-67</p>
+              <div className="flex gap-3 justify-center md:justify-end">
+                <Button variant="ghost" size="sm" className="text-white hover:text-green-400">
+                  <Icon name="MessageCircle" size={20} />
+                </Button>
+                <Button variant="ghost" size="sm" className="text-white hover:text-blue-400">
+                  <Icon name="Send" size={20} />
+                </Button>
+                <Button variant="ghost" size="sm" className="text-white hover:text-pink-400">
+                  <Icon name="Instagram" size={20} />
+                </Button>
+              </div>
+            </div>
           </div>
-          <p className="text-gray-500 text-sm mt-6">© 2024 Энергия. Все права защищены.</p>
+          <div className="text-center border-t border-gray-700 pt-6">
+            <p className="text-gray-500 text-sm">© 2024 Best Form. Все права защищены.</p>
+          </div>
         </div>
       </footer>
     </div>
